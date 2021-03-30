@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./main.css">
+        <title>À propos</title>
+
+    </head>
+
+    <body style="overflow-y: auto; overflow-x: hidden;">
+        <header>
+            <a href="/about.html">À propos</a>
+            <a href="/rules.html">Les règles du jeu</a>
+            <h1> <a href="./"> Shithead online </a><span style="color: #ff3300;">(bêta)</span></h>
+        </header>
+
+        <div id="middleContent" style="margin-top: 50px;">
+            <h5>Qu'est-ce que le shithead ?</h5>
+            <p id="intro">
+                Le shithead est un jeu de carte qui se joue avec un ou plusieurs jeux de 52 cartes classiques. <br />
+                Il faut un jeu pour 5 joueurs donc pour (par exemple) jouer à 15, il faut jouer avec 3 jeux (etc.).
+            </p>
+            <h5>Le but du jeu</h5>
+            <p>
+                Au shithead pour gagner il faut placer toutes ses cartes. <br />
+                Au début de la partie chaque joueur a 9 cartes, réparties en trois jeux (3 cartes par jeu) : le jeu
+                ouvert
+                (tout le monde peut le voir), le jeu privé (chaque joueur ne voit que le sien) et le jeu caché (personne
+                ne
+                peut le voir). <br />
+                Pour pouvoir jouer avec les cartes du jeu ouvert il faut avoir déjà joué toutes les cartes de son jeu
+                privé
+                et pour jouer les cartes du jeu caché il faut avoir déjà joué toutes les cartes de son jeu privé
+                <strong> et
+                </strong> de son jeu ouvert. <br />
+                <h6 style="margin-left: 25px;"> En résumé</h6>
+            </p>
+            <p style="margin-left: 25px;">On joue d'abord toutes les cartes de son jeu privé puis celle de son jeu
+                ouvert et
+                enfin celles de son
+                jeu caché.</p>
+            <h5>Règles de bases</h5>
+            <p>
+                Pour jouer ses cartes il faut placer une carte d'une valeur plus grande ou égale que la dernière carte
+                qui a été jouée ( <strong>SAUF <a href="#spéciales">CARTES SPÉCIALES</a></strong> ). <br />
+                Par exemple si la dernière carte jouée est un six, on peut jouer un sept, un huit etc. <br />
+                Si un joueur ne peut pas jouer (il n'a pas de carte assez haute), il ramasse toutes les cartes posées et
+                elles viennent s'ajouter dans son jeu privé et c'est au joueur suivant de jouer (celui qui vient de
+                ramasser ne joue pas). <br />
+            </p>
+            <p id="4inarow  ">
+                Il est possible de jouer jusqu'a quatres cartes de mêmes valeurs en même temps. <br />
+                Quand il y a, dans le tas, quatre cartes de même valeurs d'affillé, le dernier joueur qui a mis la/les
+                dernières cartes pour arriver à quatre rejoue et les cartes du tas sont "supprimée". <br />
+                On appelle ça "<strong>fermer le pli</strong>".<br />
+                Exemple : le joueur A met deux As, le joueur B met un As, le joueur C met un As, il donc rejouer et
+                placer la carte qu'il veut car le tas ne contient plus aucune carte.
+            </p>
+            <h5 id="spéciales">Les cartes spéciales</h5>
+            <p>
+                En plus des règles ci-dessus, il existe des cartes ayant des "pouvoirs" (cliquez pour avoir
+                l'explication de chaque pouvoir) :
+                <ul>
+                    <li><a href="#deux">Le deux</a></li>
+                    <li><a href="#trois">Le trois</a></li>
+                    <li><a href="#sept">Le sept</a></li>
+                    <li><a href="#huit">Le huit</a></li>
+                    <li><a href="#dix">Le dix</a></li>
+                </ul>
+            </p>
+            <h5 id="deux">Le deux</h5>
+            <p>
+                La carte deux est une des cartes les plus fortes du jeu car elle peut être placée <strong> peu importe
+                    la carte placée précédemment</strong>. <br />
+                Quand un deux est placé, le joueur suivant peut jouer n'importe quelle carte de son choix. <br />
+                Par exemple si le joueur A a placé un as et que le joueur B a placé un deux, le joueur C peut jouer un
+                quatre.
+
+            </p>
+            <h5 id="trois">Le trois</h5>
+            <p>
+                Le trois est souvent considéré comme la carte la plus forte du jeu, en effet comme <a href="#deux">le
+                    deux</a>, la carte trois peut être placée dans tous les cas, peu importe la carte placée
+                précédement. <br />
+                En effet le trois <strong> copie la dernière carte placée </strong>, quand un trois est placé, les
+                règles s'appliquent exactement comme si la carte placée avant avait été copiée. <br /><br />
+                Par exemple si le joueur A place un As et que le joueur B place un trois, alors le Trois sera considéré
+                comme un As, le joueur C devra donc placer une carte supérieure ou égale à un As (il pourra aussi placer
+                un <a href="deux">deux</a> ou un trois).
+            </p>
+            <h5 id="sept">Le sept</h5>
+            <p>
+                Quand un (ou plusieurs) sept sont placés, le joueur suivant doit jouer une carte de valeur inférieure ou
+                égale à sept, ce pouvoir ne fonctionne que pour le joueur jouant juste "après le sept". <br />
+                Exemple : un joueur A joue un sept, le joueur B joue un quatre et le joueur C joue un Valet.
+            </p>
+            <h5 id="huit">Le huit</h5>
+            <p>
+                Le huit passe le tour du joueur suivant. <br />
+                Le nombre de huit posé influe sur le nombre de tours passé. <br />
+                Pour passer le tour des trois joueur après vous, il vous faudra poser 3 Huit (etc.).
+            </p>
+            <h5 id="dix">Le dix</h5>
+            <p>
+                Le dix <a href="#4inarow">ferme le pli.</a> <br />
+                Le joueur qui a mis un dix peut donc rejouer. <br />
+            </p>
+        </div>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Shithead 2.0</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+
+	<body>
+		<header>
+			<a href="/about.html">À propos</a>
+			<a href="/rules.html">Les règles du jeu</a>
+			<h1> <a href="./"> Shithead online </a><span style="color: #ff3300;">(bêta)</span></h>
+		</header>
+
+
+		<div id="listeAutres">
+			<h4 style="font-size: 19px;">Les autres joueurs :</h4>
+		</div>
+
+		<div id="chat">
+			<div id="chatDisplay"></div>
+			<input type="text" id="chatWrite" placeholder="Écrivez un message" />
+			<button id="sendMsg" onclick="sendMsg()">Envoyez votre message</button>
+		</div>
+		<div id="middleContent">
+			<p id="nbJeux" style="margin-top: 50px;">
+				Cette partie utilise <%=nbJeux%> jeu(x) de 52 cartes.
+			</p>
+
+			<p id="info"></p>
+			<p id="msgServer"></p>
+			<div id="trucsTas">
+				<div>
+					<h4 id="tasMsg" style="margin-bottom: 5px;"></h4>
+					<div id="tas"></div>
+				</div>
+				<button id="tasShow"> Afficher les cartes</button>
+				<div id="tasDropdown" class="dropdown-content"></div>
+			</div>
+			<div id="jeuxMoi">
+				<h4>Jeu visible de vous</h4>
+				<div id="perso"></div>
+				<h4>Jeu visible de tous</h4>
+				<div id="ouvert"></div>
+				<div id="cache" style="display:none;"></div>
+			</div>
+		</div>
+
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script>
+			const socket = io.connect(location.origin);
+			socket.emit("readyToDistribue");
+		</script>
+		<script src="./main.js"></script>
+	</body>
+
+</html>

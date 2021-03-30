@@ -1,0 +1,69 @@
+<!-- TODO: le s qui s'ajoute ou pas en fonction du nombre de joueurs -->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<title>Shithead 2.0</title>
+	</head>
+
+	<body>
+		<header>
+			<a href="/about.html">À propos</a>
+			<a href="/rules.html">Les règles du jeu</a>
+			<h1> <a href="./"> Shithead online </a><span style="color: #ff3300;">(bêta)</span></h>
+		</header>
+		<div id="listeAutres">
+			<p id="nbPlayer"><%=partie.joueurs.length%> joueurs</p>
+
+
+			<table id="joueursCo">
+				<tr>
+					<th>Joueurs :</th>
+				</tr>
+				<% for( let i = 0; i < partie.joueurs.length; i++ ) { %>
+				<tr>
+					<td>
+						<%= partie.joueurs[i].pseudo%>
+					</td>
+					<% if (admin && i != 0) {//l'admin peut pas se kick lui même %>
+					Exlure
+					<button onclick="kickPlayer(<%=i%>)"> Expulser ce joueur</button>
+					<% } %>
+				</tr>
+				<% } %>
+			</table>
+		</div>
+
+		<button id="copyLink" data-clipboard-text="<%=adresse + "join?token=" + token %>">Copier le lien de la partie</button>
+		<div id="middleContent2">
+			<div id="isAdmin" data-isAdmin="<%=String(admin)%>">
+				<!-- Changer cette valeur ne fera pas de vous un admin, ça serait trop simple :D-->
+			</div>
+			<script src="./clipboard.min.js"></script>
+			<img src="./images/waiting.gif" / id="waitingGif">
+			<p id="waitingMsg">En attente des autres des joueurs <span id="points"></span> </p>
+			<% if (admin) { %>
+			<button onclick="startPartie()"> Commencer la partie</button>
+			<% } %>
+			<script src="/socket.io/socket.io.js"></script>
+			<script>
+				setInterval(() =>
+				{
+					let points = document.getElementById("points");
+					if (points.textContent.length >= 3)
+						points.textContent = "";
+					else
+						points.textContent += ".";
+				}, 700);
+			</script>
+			<script>
+				const socket = io.connect(location.origin);
+				socket.emit("joinGame", "<%=token%>");
+			</script>
+			<script src="./waiting.js"></script>
+		</div>
+	</body>
+
+</html>

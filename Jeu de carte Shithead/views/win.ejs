@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Shithead 2.0</title>
+	</head>
+
+	<body>
+		<div id="mainMsg">
+			<div id="nbTop">#<%=nb%></div>
+			Bien joué :D
+		</div>
+		<style>
+			@font-face {
+				font-family: font_win;
+				src: url("./font/BigfatScript-jE96G.ttf");
+			}
+
+			#nbTop {
+				display: inline;
+			}
+
+			#mainMsg {
+				position: absolute;
+				z-index: 2;
+				text-align: center;
+				word-spacing: 20px;
+				font-size: 80px;
+				left: calc(50% - 6ch);
+				font-family: font_win;
+				color: <%=couleur%>;
+			}
+
+			body {
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+
+			#container {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			body
+			{
+				background-color: white;
+			}
+		</style>
+		<canvas id="container"></canvas>
+		<script src="win.js"></script>
+
+	</body>
+
+</html>

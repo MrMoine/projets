@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Shithead 2.0</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+    </head>
+
+    <body>
+        <header>
+            <a href="/about.html">À propos</a>
+            <a href="/rules.html">Les règles du jeu</a>
+            <h1> <a href="./"> Shithead online </a><span style="color: #ff3300;">(bêta)</span></h>
+        </header>
+        <div id="centerForm">
+            <form action="./create">
+                <input type="submit" value="Créer une partie">
+            </form>
+            
+            <input type="text" id="idGame" placeholder="ID de partie">
+            <button onclick="join()"> Rejoindre une partie</button>
+            <form action="./matchmaking" >
+                <input type="submit" value="Rejoindre une partie publique">
+            </form>
+        </div>
+        <script>
+            function join()
+            {
+                let idGame = document.getElementById("idGame").value;
+                location.href = "./join?token=" + idGame;
+            }
+        </script>
+    </body>
+
+</html>

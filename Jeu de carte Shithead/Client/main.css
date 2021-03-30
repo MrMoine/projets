@@ -1,0 +1,312 @@
+@font-face {
+    font-family: waiting_font;
+    src: url(./font/Aller_Rg.ttf);
+}
+
+@font-face {
+    font-family: long_texte_font;
+    src: url(./font/Louis\ George\ Cafe.ttf);
+}
+
+#perso, #ouvert {
+    padding: 10px;
+    margin: 5px;
+    width: max-content;
+}
+
+#msgServer {
+    color: #72D3FE;
+}
+
+#pioche {
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    border: dashed darkgray;
+    color: gray;
+}
+
+#middleContent, #middleContent2 {
+    font-family: long_texte_font;
+}
+
+#listeAutres {
+    width: 200px;
+    position: absolute;
+    height: 100%;
+    background-color: rgb(107, 185, 185);
+    padding: 15px;
+    color: white;
+}
+
+header>h1 {
+    font-size: 45px;
+    color: white;
+    margin-left: 8%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+#nbJeux {
+    margin-top: 0;
+}
+
+#middleContent {
+    margin-left: 250px;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    padding: 40px;
+    background-color: #81D8D0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+header>a {
+    margin-top: 40px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+    padding-left: 5px;
+    border-left: 6px solid gray;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+h4 {
+    font-size: 30px;
+    width: max-content;
+    color: gray;
+    border-bottom: solid gray;
+}
+
+.carteMoi {
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.carteAutre {
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.dropbtn {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+button, input[type=submit] {
+    border: none;
+    border-radius: 5px;
+    background-color: #078ca9;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    height: min-content;
+}
+
+#middleContent>button, #middleContent>input[type=submit] {
+    margin-left: 30px;
+}
+
+button:active, input[type=submit]:active {
+    transform: scale(95%);
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+    width: min-content;
+}
+
+#trucsTas {
+    display: flex;
+}
+
+#chatDisplay>p {
+    font-size: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #D5F1DE;
+    border-radius: 5px;
+    width: min-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content>* {
+    margin: 5px;
+}
+
+#tas {
+    color: gray;
+    height: 202px;
+    width: 135px;
+    text-align: center;
+    line-height: 202px;
+    border: 3px dotted gray;
+}
+
+.carteDos, .carte {
+    height: 202px;
+    width: 135px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+#centerForm {
+    margin-top: 30px;
+    position: absolute;
+    left: 30%;
+}
+
+#waitingGif {
+    width: 20em;
+    height: 20em;
+}
+
+button, input, .g-recaptcha {
+    margin: 10px;
+}
+
+input[type=text] {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+input[name=pseudo] {
+    background-image: url('./images/user_logo.png');
+    background-position: left 3px top 3px;
+    background-size: 16%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+#chat {
+    margin: 10px;
+    margin-right: 20px;
+    display: block;
+    float: right;
+    width: 300px;
+}
+
+#chatDisplay {
+    background-color: rgb(240, 251, 255);
+    height: 500px;
+    overflow: auto;
+}
+
+#middleContent2 {
+    margin: 70px;
+    margin-left: 450px;
+}
+
+#waitingMsg {
+    font-size: 30px;
+    color: gray;
+    font-family: waiting_font;
+}
+
+#middleContent2>button {
+    margin: 0;
+}
+
+#copyLink {
+    margin: 10px;
+    margin-left: 250px;
+    float: left;
+}
+
+th {
+    width: available;
+    height: min-content;
+}
+
+h1>a {
+    text-decoration: underline overline gray;
+    color: white;
+}
+
+p>a {
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+    width: fit-content;
+    margin: 10px;
+    margin-left: 25px;
+    line-height: 20px;
+}
+
+h5 {
+    margin: 10px;
+    margin-left: 15px;
+    text-decoration: none;
+    border-bottom: 2px solid gray;
+    font-size: 25px;
+    width: max-content;
+    color: gray;
+}
+
+li {
+    margin: 5px;
+}
+
+a {
+    color: #2E9FB9;
+}
+
+h6 {
+    margin: 5px;
+    font-size: 22px;
+    color: gray;
+    font-weight: bold;
+}
+
+#perso, #ouvert {
+    overflow: auto;
+    width: 700px;
+    height: 210px;
+}
+
+.msgAdmin, .msgNormal {
+    border-radius: 5px;
+    margin: 3px;
+    padding: 2px;
+    background-color: rgba(70, 69, 69, 0.048);
+}
+
+.msgAdmin {
+    font-weight: 550;
+}
+
+.pseudoAdmin {
+    text-decoration: underline;
+}
