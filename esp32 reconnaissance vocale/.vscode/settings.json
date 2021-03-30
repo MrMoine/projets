@@ -1,0 +1,14 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.dimInactiveRegions": true,
+    "files.associations": {
+        "functional": "cpp",
+        "system_error": "cpp",
+        "type_traits": "cpp",
+        "xlocmon": "cpp",
+        "xtr1common": "cpp",
+        "array": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp"
+    }
+}
