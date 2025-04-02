@@ -42,8 +42,8 @@ portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
 TaskHandle_t handleTacheAudioSend = NULL;
 //*************************************** variables wifi et internet *****************************************************************
 
-const char *ssid = "cathjphi";
-const char *password = "leschatons";
+const char *ssid = "ssid";
+const char *password = "password";
 
 const int rand_pin = 33;
 unsigned long beginMicros, endMicros;
